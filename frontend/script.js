@@ -38,11 +38,7 @@ document.getElementById('dataForm').addEventListener('submit', function(event) {
         backendResultElement.innerText = "Backend Message: " + data.message;
         backendResultElement.classList.remove('hidden');
     })
-    .catch(error => {
-        console.error('Lỗi khi gọi Backend:', error);
-        document.getElementById('backendResult').innerText = "Backend lỗi ❌ - Kiểm tra console";
-        document.getElementById('backendResult').classList.remove('hidden');
-    });
+
 
     // Xóa trường nhập liệu sau khi gửi thành công
     inputElement.value = '';
