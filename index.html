@@ -7,54 +7,59 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>📰 Báo Điện Tử Mới</h1>
-        <nav>
-            <a href="#">Trang chủ</a>
-            <a href="#">Thời sự</a>
-            <a href="#">Kinh tế</a>
-            <a href="#">Giải trí</a>
-            <a href="#">Thể thao</a>
-        </nav>
-    </header>
+<header>
+    <h1>📰 Báo Điện Tử Mới</h1>
+    <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#">Thời sự</a>
+        <a href="#">Kinh tế</a>
+        <a href="#">Giải trí</a>
+        <a href="#">Thể thao</a>
+    </nav>
+    <button id="toggle-theme">🌙 Dark mode</button>
+</header>
 
-    <!-- Main content -->
-    <main>
-        <section class="news">
-            <article>
-                <h2>Giá vàng hôm nay tăng mạnh</h2>
-                <p class="date">16/12/2025</p>
-                <p>
-                    Giá vàng trong nước và thế giới đồng loạt tăng do biến động kinh tế toàn cầu...
-                </p>
-                <button onclick="readMore()">Đọc thêm</button>
-            </article>
+<main>
+    <section class="news">
+        <article>
+            <h2>Giá vàng hôm nay tăng mạnh</h2>
+            <p class="date">16/12/2025</p>
+            <p class="short">
+                Giá vàng trong nước và thế giới đồng loạt tăng...
+            </p>
+            <p class="full hidden">
+                Giá vàng trong nước và thế giới đồng loạt tăng do biến động kinh tế toàn cầu và tình hình chính trị quốc tế.
+            </p>
+            <button class="read-more">Đọc thêm</button>
+        </article>
 
-            <article>
-                <h2>Đội tuyển Việt Nam thắng lớn</h2>
-                <p class="date">15/12/2025</p>
-                <p>
-                    Đội tuyển Việt Nam giành chiến thắng thuyết phục trong trận đấu tối qua...
-                </p>
-                <button onclick="readMore()">Đọc thêm</button>
-            </article>
-        </section>
+        <article>
+            <h2>Đội tuyển Việt Nam thắng lớn</h2>
+            <p class="date">15/12/2025</p>
+            <p class="short">
+                Đội tuyển Việt Nam giành chiến thắng...
+            </p>
+            <p class="full hidden">
+                Đội tuyển Việt Nam giành chiến thắng thuyết phục trong trận đấu tối qua với tỷ số 3-0.
+            </p>
+            <button class="read-more">Đọc thêm</button>
+        </article>
+    </section>
 
-        <!-- Sidebar -->
-        <aside>
-            <h3>Tin nổi bật</h3>
-            <ul>
-                <li>Kinh tế Việt Nam tăng trưởng</li>
-                <li>Công nghệ AI bùng nổ</li>
-                <li>Du lịch phục hồi mạnh</li>
-            </ul>
-        </aside>
-    </main>
+    <aside>
+        <h3>Tin nổi bật</h3>
+        <ul>
+            <li>Kinh tế Việt Nam tăng trưởng</li>
+            <li>Công nghệ AI bùng nổ</li>
+            <li>Du lịch phục hồi mạnh</li>
+        </ul>
+    </aside>
+</main>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Báo Điện Tử Mới. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>© 2025 Báo Điện Tử Mới</p>
+</footer>
 
-    <script src="script.js"
+<script src="script.js"></script>
+</body>
+</html>
