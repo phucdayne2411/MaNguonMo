@@ -1,5 +1,6 @@
 function callAPI() {
   fetch("https://ma-nguon-mo.onrender.com/api/hello")
+
     .then(res => res.json())
     .then(data => {
       document.getElementById("result").innerText = data.message;
