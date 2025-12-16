@@ -1,5 +1,5 @@
 function callAPI() {
-  fetch("https://ma-nguon-mo.onrender.com/api/hello")
+  fetch("https://ma-nguon-mo.onrender.com")
 
     .then(res => res.json())
     .then(data => {
