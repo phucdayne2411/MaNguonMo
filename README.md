@@ -1,1 +1,0 @@
-echo "# MaNguonMo" >> README.md
