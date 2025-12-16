@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <title>Demo FE + BE</title>
-  <link rel="stylesheet" href="style.css" />
- 
+    <meta charset="UTF-8" />
+    <title>Demo FE + BE (Form)</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>🚀 Demo FE + BE</h1>
-  <button onclick="callAPI()">Gọi Backend</button>
-  <p id="result">Kết quả sẽ hiện ở đây</p>
+    <h1>🚀 Demo FE + BE - Form</h1>
+    <form id="dataForm">
+        <label for="dataInput">Nhập dữ liệu:</label>
+        <input type="text" id="dataInput" name="dataInput" required placeholder="Nhập tên, tin nhắn,..." />
+        <button type="submit">Gửi đến Backend</button>
+    </form>
 
-  <footer>Frontend đơn giản - Kết nối Backend Render</footer>
+    <div id="resultContainer">
+        <p id="backendResult" class="hidden">Backend Message: </p>
+        <p id="userInputResult" class="hidden">Bạn đã nhập: </p>
+    </div>
 
-  <script src="script.js"></script>
+    <footer>Frontend đơn giản - Kết nối Backend Render</footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
