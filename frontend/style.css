@@ -1,0 +1,111 @@
+/* --- Reset cơ bản --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f0f4f8;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    color: #1e3a8a;
+}
+
+/* Style cho Form */
+#dataForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#dataForm label {
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+#dataInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+#dataInput:focus {
+    border-color: #2563eb;
+    outline: none;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+}
+
+button[type="submit"] {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.02);
+}
+
+/* Style cho Kết quả */
+#resultContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+#backendResult, #userInputResult {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: opacity 0.5s;
+}
+
+#backendResult {
+    background-color: #e0e7ff; /* Xanh nhạt */
+    color: #1e40af; /* Xanh đậm */
+}
+
+#userInputResult {
+    background-color: #ccfbf1; /* Xanh ngọc nhạt */
+    color: #0f766e; /* Xanh ngọc đậm */
+    font-style: italic;
+}
+
+.hidden {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 0.85rem;
+    color: #555;
+}

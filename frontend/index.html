@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <title>Demo FE + BE (Form)</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>🚀 Demo FE + BE - Form</h1>
+    <form id="dataForm">
+        <label for="dataInput">Nhập dữ liệu:</label>
+        <input type="text" id="dataInput" name="dataInput" required placeholder="Nhập tên, tin nhắn,..." />
+        <button type="submit">Gửi đến Backend</button>
+    </form>
+
+    <div id="resultContainer">
+        <p id="backendResult" class="hidden">Backend Message: </p>
+        <p id="userInputResult" class="hidden">Bạn đã nhập: </p>
+    </div>
+
+    <footer>Frontend đơn giản - Kết nối Backend Render</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
